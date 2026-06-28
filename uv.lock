@@ -1156,7 +1156,9 @@ dev = [
     { name = "anyio" },
     { name = "langgraph-cli", version = "0.4.7", source = { registry = "https://pypi.org/simple" }, extra = ["inmem"], marker = "python_full_version < '3.11'" },
     { name = "langgraph-cli", version = "0.4.30", source = { registry = "https://pypi.org/simple" }, extra = ["inmem"], marker = "python_full_version >= '3.11'" },
+    { name = "mypy" },
     { name = "pytest" },
+    { name = "ruff" },
 ]
 
 [package.metadata]
@@ -1167,7 +1169,7 @@ requires-dist = [
     { name = "langchain-openai", specifier = ">=1.1.14" },
     { name = "langgraph", specifier = ">=1.0.0,<2.0.0" },
     { name = "langgraph-sdk", specifier = ">=0.1.32" },
-    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.11.1" },
+    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.11.1,<2.0.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.6.1" },
 ]
@@ -1177,7 +1179,9 @@ provides-extras = ["dev"]
 dev = [
     { name = "anyio", specifier = ">=4.7.0" },
     { name = "langgraph-cli", extras = ["inmem"], specifier = ">=0.1.71" },
+    { name = "mypy", specifier = ">=1.11.1,<2.0.0" },
     { name = "pytest", specifier = ">=9.0.3" },
+    { name = "ruff", specifier = ">=0.6.1" },
 ]
 
 [[package]]
